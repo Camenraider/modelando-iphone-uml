@@ -34,38 +34,41 @@ Com base no vídeo de lançamento do iPhone de 2007 (link abaixo), você deve el
 classDiagram
     namesapace ModelandoIphoneUml   
     class ReprodutorMusical {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+        +tocar()
+        +pausar()
+        +selecionarMusica(String musica)
     }
 
     class AparelhoTelefonico {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+        +ligar(String numero)
+        +atender()
+        +iniciarCorreioVoz()
     }
 
     class NavegadorInternet {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+        +exibirPagina(String url)
+        +adicionarNovaAba()
+        +atualizarPagina()
     }
-    class ipod {
-    }
-
-    class celular {
+    class Ipod {
     }
 
-    class safari {
+    class Celular {
     }
 
-    class iPhone {
+    class Safari {
     }
 
-    ReprodutorMusical <|-- iPhone 
-    AparelhoTelefonico <|-- iPhone  
-    NavegadorInternet <|-- iPhone  
+    class IPhone {
+    }
 
-    ReprodutorMusical <|-- ipod
-    AparelhoTelefonico <|-- celular
-    NavegadorInternet <|-- safari
+    ReprodutorMusical <|-- IPhone 
+    AparelhoTelefonico <|-- IPhone  
+    NavegadorInternet <|-- IPhone  
+
+    ReprodutorMusical <|-- Ipod
+    AparelhoTelefonico <|-- Celular
+    NavegadorInternet <|-- Safari
 ```
 
 ### Instruções
